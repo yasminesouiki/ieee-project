@@ -75,12 +75,11 @@ function Navbar3() {
                 component="a"
                 href="#"
                 sx={{
-                  textDecoration: 'none',
+                  textDecoration: page.label === 'HOME' ? 'underline' : 'none',
                   color: 'inherit',
                   fontWeight: 'bold',
                   fontSize: '0.8rem',
                   letterSpacing: '0.1em',
-                  
                   textTransform: 'uppercase',
                   display: 'flex',
                   alignItems: 'center',
@@ -88,13 +87,14 @@ function Navbar3() {
                   px: 0.7,
                   lineHeight: '50px',
                   '&:hover': {
-                    opacity: 0.8,
                     cursor: 'pointer',
+                    textDecoration: page.label !== 'HOME' ? 'underline' : 'underline', // Keeps underline on hover for all
                   },
                 }}
               >
                 {page.label}
               </Typography>
+
 
              
 

@@ -1,63 +1,64 @@
 .carousel-container {
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto; /* Centre le carousel horizontalement */
-  }
+}
+
+.image-wrapper {
+  margin: 50px 0 0 0; /* Moins d'espace autour des images */
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.carousel-item img {
+  height: 300px; /* Réduction de la hauteur */
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  border-radius: 0;
+}
+
+.custom-caption {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  right: 0px;
   
-  .image-wrapper {
-    margin: 20px 0; /* Moins d'espace autour des images */
-    overflow: hidden;
-    border-radius: 8px;
-  }
-  
-  .carousel-item img {
-    height: 350px; /* Réduction de la hauteur */
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-  }
-  
-  .custom-caption {
-    position: absolute;
-    left: 0%;
-    bottom: 5%;
-    right: 0px;
-    
-    max-width: 100%;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 12px;
-  }
-  
-  .custom-caption h3 {
-    font-size: 1rem; /* Titre plus petit */
-    margin-bottom: 5px;
-  }
-  
-  .custom-caption p {
-    font-size: 0.85rem; /* Paragraphe plus petit */
-    margin: 0;
-  }
-  
-  
-  .custom-prev-icon,
-  .custom-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 40px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.2rem;
-  }
-  
-  .carousel-control-prev {
-    left: -40px;
-  }
-  
-  .carousel-control-next {
-    right: -40px;
-  }
-  
+  max-width: 100%;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 12px;
+}
+
+.custom-caption h3 {
+  font-size: 1rem; /* Titre plus petit */
+  margin-bottom: 5px;
+}
+
+.custom-caption p {
+  font-size: 0.85rem; /* Paragraphe plus petit */
+  margin: 0;
+}
+
+
+.custom-prev-icon,
+.custom-next-icon {
+  background-color: rgba(0, 0, 0, 0.908);
+  width: 40px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-control-prev {
+  left: -40px;
+}
+
+.carousel-control-next {
+  right: -40px;
+  z-index: 2;
+}
+.carousel-indicators {
+  bottom: -20px;
+}

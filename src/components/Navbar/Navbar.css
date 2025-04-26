@@ -1,0 +1,51 @@
+/* Remove all default spacing from html/body */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main navbar */
+.navbar {
+background-color: #e6edf4;
+border-bottom: 0.5px solid #00629b;
+color: #00629b;
+width: 100%;
+margin: 0;
+padding: 0;
+}
+
+/* Inner container with horizontal padding */
+.nav-container {
+display: flex;
+align-items: center;
+padding: 0 80px; /* adjust as needed */
+margin: 0;
+height: 15px; /* optional fixed height */
+}
+
+/* Individual item */
+.nav-item {
+display: flex;
+align-items: center;
+margin: 0;
+padding: 0;
+}
+
+.nav-link {
+text-decoration: none;
+color: #00629b;
+font-weight: bold !important;
+font-size: 12px !important;
+margin: 0;
+padding: 0;
+}
+
+.nav-link:hover {
+text-decoration: underline;
+}
+
+/* Divider */
+.divider {
+color: #ccc;
+margin: 0 10px;
+}

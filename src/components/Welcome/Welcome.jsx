@@ -3,20 +3,23 @@ import { Box, Typography, Container, Paper } from '@mui/material';
 
 const Welcome = () => {
   return (
-    <Container maxWidth="md" sx={{ py: 6 }}>
-      <Typography variant="h3" component="h1" fontWeight="bold" gutterBottom>
+    <Container maxWidth="md">
+      <Typography variant="h4" component="h1" fontWeight="bold" gutterBottom>
         Welcome to JURSE 2025!
       </Typography>
 
-      <Typography variant="h5" color="text.secondary" gutterBottom>
+      <Typography variant="h5" color="#333333" gutterBottom>
         4-7 May 2025, Gammarth-Tunis, Tunisia
       </Typography>
 
-      <Paper elevation={3} sx={{ p: 2, backgroundColor: '#f8fdf4', display: 'inline-block', mb: 4 }}>
-        <Typography variant="h6" fontWeight="bold" color="success.main">
-          Shaping Sustainable Cities
-        </Typography>
-      </Paper>
+      <Box display="flex" justifyContent="center">
+        <Paper sx={{p: 0.4, backgroundColor: '#FCF8E3', display: 'inline-block', mb: 1, borderRadius: 0, boxShadow: 0}}>
+          <Typography variant="h5" fontWeight="bold" color="#00D084">
+            Shaping Sustainable Cities
+          </Typography>
+        </Paper>
+      </Box>
+
 
       <Typography variant="body1" paragraph>
         The <Typography component="span" fontWeight="bold">Joint Urban Remote Sensing Event (JURSE)</Typography> is a forum of excellence
