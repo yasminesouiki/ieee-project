@@ -39,7 +39,7 @@ JavaScript JavaScript ES6+
  * Cloner le dépôt:
 cd votre-projet
 
- *Installer les dépendances:
+ * Installer les dépendances:
 bash
 npm install
 
